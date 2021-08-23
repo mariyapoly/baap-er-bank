@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="w-3/4 mx-auto">
+        <h1 class="text-6xl capitalize mt-16 font-semibold text-center">let's get some<span
+                class="text-blue-500 font-bold uppercase">
+                moooooney!!</span>
+        </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-16">
+            <div class="grid grid-cols-3 gap-x-4">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h4 class="text-2xl text-white capitalize font-medium">deposit</h4>
+                    <h3 class="text-6xl text-white font-semibold">$<span id="deposit-amound">00</span> </h3>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h4 class="text-2xl text-white capitalize font-medium">withdraw</h4>
+                    <h3 class="text-6xl text-white font-semibold">$<span id="withdraw-amound">00</span></h3>
+                </div>
+                <div class="bg-purple-300 p-8 rounded">
+                    <h4 class="text-2xl text-white capitalize font-medium">balance</h4>
+                    <h3 class="text-6xl text-white font-semibold">$<span id="total-balance">1200</span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="my-8">
+            <div class="grid grid-cols-2 gap-x-4">
+                <div class="bg-red-300 p-8 rounded">
+                    <h3 class="mb-4 text-2xl capitalize font-medium">please diposit</h3>
+                    <input id="deposit-input" class="w-3/4 block mb-4 px-4 py-2 rounded capitalize" type="text"
+                        placeholder="$ amount you want to deposit">
+                    <button id="deposit-btn"
+                        class="bg-gray-600 px-6 py-2 text-white capitalize font-bold rounded">deposit</button>
+                </div>
+                <div class="bg-pink-300 p-8 rounded">
+                    <h3 class="mb-4 text-2xl capitalize font-medium">please withdraw</h3>
+                    <input id="withdraw-input" class="w-3/4 block mb-4 px-4 py-2 rounded capitalize" type="text"
+                        placeholder="$ amount you want to withdraw">
+                    <button id="withdraw-btn"
+                        class="bg-gray-600 px-6 py-2 text-white capitalize font-bold rounded">withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
